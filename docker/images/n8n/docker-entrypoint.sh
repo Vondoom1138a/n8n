@@ -8,5 +8,5 @@ if [ -d /opt/custom-certificates ]; then
   c_rehash /opt/custom-certificates
 fi
 
-# Always start with host 0.0.0.0 and default port
-exec n8n start --host 0.0.0.0 --port 5678
+# Use environment variables instead of CLI flags
+exec n8n start
