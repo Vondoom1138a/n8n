@@ -1,5 +1,5 @@
 services:
   app:
     ports:
-      - port: 3000
+      - port: 5678
         handler: http
