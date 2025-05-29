@@ -1,5 +1,5 @@
 ARG NODE_VERSION=20
-ARG N8N_VERSION=1.93.1
+ARG N8N_VERSION=1.70.0
 
 # 1. Create an image to build n8n
 FROM --platform=linux/amd64 n8nio/base:${NODE_VERSION} AS builder
