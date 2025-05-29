@@ -1,0 +1,5 @@
+services:
+  app:
+    ports:
+      - port: 3000
+        handler: http
