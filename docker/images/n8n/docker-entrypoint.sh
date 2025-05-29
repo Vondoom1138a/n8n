@@ -6,10 +6,5 @@ if [ -d /opt/custom-certificates ]; then
   c_rehash /opt/custom-certificates
 fi
 
-if [ "$#" -gt 0 ]; then
-  # Got started with arguments
-  exec n8n "$@"
-else
-  # Got started without arguments
-  exec n8n
-fi
+# Always run n8n with --host 0.0.0.0
+exec n8n start --host 0.0.0.0
